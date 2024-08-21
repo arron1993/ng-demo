@@ -1,0 +1,10 @@
+<div>
+  <button
+    class="btn"
+    [ngClass]="{ 'btn-primary': !isOn, 'btn-outline-primary': isOn }"
+    (click)="toggle()"
+  >
+    Toggle
+  </button>
+</div>
+<app-if [isOn]="isOn" />

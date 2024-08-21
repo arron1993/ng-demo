@@ -1,0 +1,12 @@
+<nav class="bg-light p-4">
+  <div class="d-flex">
+    <div class="d-flex">
+      <a class="p-2" routerLink="/examples/if"> if statement </a>
+      <a class="p-2" routerLink="/examples/for-loop"> for loop </a>
+      <a class="p-2" routerLink="/examples/form"> form  </a>
+    </div>
+    <div *ngIf="latestItem.name">
+      <small> You last added {{latestItem.quantity}}  {{latestItem.name}} </small>
+    </div>
+  </div>
+</nav>
